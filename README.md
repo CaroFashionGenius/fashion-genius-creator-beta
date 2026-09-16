@@ -1,0 +1,1 @@
+Fashion Genius Creator Studio Private Beta landing page. Upload index.html and assets/ to GitHub Pages. Feedback CTA is intentionally inactive until the survey URL exists.
