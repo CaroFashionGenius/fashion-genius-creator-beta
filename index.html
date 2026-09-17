@@ -1,21 +1,961 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Fashion Genius Creator Studio — Private Beta</title><style>
-:root{--b:#0d0f10;--p:#151718;--l:#303334;--w:#f3f2ee;--m:#a6a7a7;--g:#c9ff18}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--b);color:var(--w);font-family:Arial,sans-serif}.s{width:min(1400px,calc(100% - 64px));margin:auto}a{color:inherit}.nav{height:82px;border-bottom:1px solid var(--l);display:flex;align-items:center;justify-content:space-between}.logo{font-family:Georgia,'Times New Roman',serif;font-weight:700;letter-spacing:-.02em;text-decoration:none;font-size:22px;white-space:nowrap}.links{display:flex;align-items:center;gap:30px;font-size:12px;letter-spacing:.03em}.links a{text-decoration:none;color:#c6c6c3}.links>a:not(.btn){padding-bottom:3px;border-bottom:1px solid transparent}.links>a:not(.btn):hover{border-bottom-color:#8d8f8e}.btn{display:inline-block;padding:12px 18px;border:1px solid #d7d7d2;text-decoration:none;font-weight:700}.btn.g{background:var(--g);border-color:var(--g);color:#080909}.hero{padding:96px 0 64px}.k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#9fa1a0}h1,h2,h3,.price{font-family:Georgia,serif}.hero h1{font-size:clamp(54px,7vw,106px);line-height:.92;letter-spacing:-.05em;max-width:1000px;margin:20px 0 28px}.hero p{max-width:720px;color:#b3b5b4;font-size:19px;line-height:1.6}.actions{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:34px}.micro{font-size:12px;color:#8d8f8e}.product{border:1px solid var(--l);padding:10px;background:#141617;margin-bottom:70px}.product img,.screen img{width:100%;display:block}.bar{border:1px solid var(--l);padding:30px;display:grid;grid-template-columns:1fr 1.6fr .7fr;gap:28px;align-items:center;margin-bottom:100px}.bar h2{font-size:30px;margin:8px 0}.bar p{font-size:14px;color:#aaa;line-height:1.6;margin:0}.right{text-align:right}section{border-top:1px solid #252728;padding:96px 0}.head{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;margin-bottom:62px}.head h2{font-size:clamp(40px,5vw,68px);line-height:1;margin:0}.head p,.copy p,.intro p{color:#aaa;line-height:1.7}.walk{display:grid;gap:72px}.row{display:grid;grid-template-columns:.55fr 1.45fr;gap:55px;align-items:start}.n{font-size:11px;color:var(--g);letter-spacing:.17em}.copy h3{font-size:34px;margin:12px 0}.screen{border:1px solid var(--l);padding:8px;background:#151718}.mission{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}.mission h2,.intro h2{font-size:clamp(42px,5vw,68px);line-height:1;margin:14px 0 20px}.box{border:1px solid var(--l);padding:34px;background:#111314}.lime{background:var(--g);color:#0b0c0c;border-color:var(--g)}ul{list-style:none;padding:0;margin:20px 0 0}li{padding:9px 0;border-bottom:1px solid rgba(120,120,120,.25);font-size:14px}.plans{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:42px}.plan{border:1px solid var(--l);padding:32px}.name{font-size:11px;letter-spacing:.2em}.price{font-size:52px;margin:20px 0 4px}.was{color:#777;text-decoration:line-through}.plan p{font-size:13px;color:#999}.feedback{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}.feedback h2{font-size:54px;line-height:1;margin:12px 0}.disabled{opacity:.45;pointer-events:none}.final{text-align:center;padding:120px 0}.final h2{font-size:clamp(44px,6vw,78px);margin:12px auto 34px;max-width:850px}footer{border-top:1px solid var(--l);padding:32px 0 48px;display:flex;justify-content:space-between;color:#808281;font-size:12px}footer div{display:flex;gap:22px}footer a{text-decoration:none}
-@media(max-width:800px){.s{width:calc(100% - 28px)}.nav{height:70px}.links>a:not(.btn){display:none}.hero{padding:58px 0 44px}.bar,.head,.row,.mission,.plans,.feedback{grid-template-columns:1fr}.right{text-align:left}.row{gap:20px}section{padding:70px 0}.walk{gap:60px}footer{flex-direction:column;gap:18px}}
-</style></head><body><div class="s">
-<nav class="nav"><a class="logo" href="https://fashion-genius.com/" aria-label="Fashion Genius home">FASHION GENIUS</a><div class="links"><a href="https://fashion-genius.com/#platform">Plans</a><a class="btn" href="https://creatorstudio.fashion-genius.com/">Enter Creator Studio ↗</a></div></nav>
-<header class="hero"><div class="k">Creator Studio · Private Beta</div><h1>Welcome to your Creator Studio.</h1><p>Create and experiment with AI-powered virtual fashion looks using your own content. Experience the product first — and help us shape what comes next.</p><div class="actions"><a class="btn g" href="https://creatorstudio.fashion-genius.com/">Start your 21-day beta ↗</a><span class="micro">Complimentary PRO access · No credit card · No posting requirement</span></div></header>
-<div class="product"><img src="assets/dashboard.png" alt="Creator Studio dashboard"></div>
-<div class="bar"><div><div class="k">Your beta access</div><h2>21 days · PRO</h2></div><p>Register for Creator Studio, then we’ll upgrade your account to PRO for the private beta. Create a few looks and use the workflow as you naturally would.</p><div class="right"><strong>3–5 looks</strong><br><span class="micro">+ short feedback survey</span></div></div>
-<section><div class="head"><h2>From upload to first look.</h2><p>Start whenever it suits you. Four simple steps take you from your own content to a generated virtual try-on.</p></div><div class="walk">
-<div class="row"><div class="copy"><div class="n">01 / MODEL</div><h3>Add your model.</h3><p>Choose an existing model or upload a clear, well-lit image.</p></div><div class="screen"><img src="assets/models.png"></div></div>
-<div class="row"><div class="copy"><div class="n">02 / CLOTHING</div><h3>Add a garment.</h3><p>Select clothing from your library or upload the piece you want to try.</p></div><div class="screen"><img src="assets/clothes.png"></div></div>
-<div class="row"><div class="copy"><div class="n">03 / CREATE</div><h3>Generate your look.</h3><p>Open Try-On Studio, pair model and garment, preview the pairing and generate your result.</p></div><div class="screen"><img src="assets/tryon.png"></div></div>
-<div class="row"><div class="copy"><div class="n">04 / EXPLORE</div><h3>Review. Repeat. Explore.</h3><p>Review generated looks under Results and experiment with different garments and combinations.</p></div><div class="screen"><img src="assets/results.png"></div></div>
-</div></section>
-<section><div class="mission"><div><div class="k">Your beta mission</div><h2>Use it like a creator — not like a tester.</h2><p style="color:#aaa;line-height:1.7">We want to understand whether Creator Studio can make fashion content creation faster, easier and more flexible. There is no requirement to post or promote Fashion Genius. Your product experience and feedback are what matter.</p></div><div class="box lime"><div class="k" style="color:#0b0c0c">During your 21 days</div><ul><li>Create 3–5 different looks</li><li>Try different garments or styles</li><li>Explore Results & Collections</li><li>Note what you love and what you miss</li><li>Complete the short feedback survey</li></ul></div></div></section>
-<section><div class="intro"><div class="k">A thank-you for shaping Fashion Genius with us</div><h2>Preferred early-access pricing.</h2><p>If Creator Studio works for you and you decide to continue after the beta, you’ll receive 50% off your first three paid months on either Creator or PRO.</p></div><div class="plans"><div class="plan"><div class="name">CREATOR</div><div class="price">€9.50 <span style="font:14px Arial">/ month</span></div><div class="was">€19 / month</div><p>First 3 paid months. Standard pricing applies afterwards.</p></div><div class="plan"><div class="name">PRO</div><div class="price">€24.50 <span style="font:14px Arial">/ month</span></div><div class="was">€49 / month</div><p>First 3 paid months. Standard pricing applies afterwards.</p></div></div><p style="font-size:13px;margin-top:22px">Explore standard plans and features → <a style="color:var(--g)" href="https://fashion-genius.com/#platform">View plans</a></p><p class="micro">No long-term commitment required.</p></section>
-<section><div class="feedback"><div><div class="k">Feedback</div><h2>Help shape what comes next.</h2><p style="color:#aaa;line-height:1.7">After you’ve created a few looks, we’ll ask 10 short questions about your experience. It should take around four minutes.</p></div><div class="box"><div><div class="k">Beta feedback survey</div><h3 style="font-size:32px;margin:12px 0">Coming shortly.</h3><p style="color:#aaa;line-height:1.6">The survey link will be shared directly with beta creators after testing.</p></div><span class="btn disabled">Share feedback →</span></div></div></section>
-<div class="final"><div class="k">Private Creator Beta</div><h2>Ready to create your first look?</h2><a class="btn g" href="https://creatorstudio.fashion-genius.com/">Enter Creator Studio ↗</a><p class="micro" style="margin-top:20px">Register first. Your account will then be manually upgraded to PRO for the beta.</p></div>
-<footer><span>© 2026 Fashion Genius · Creator Studio Private Beta</span><div><a href="https://fashion-genius.com/">Fashion Genius</a><a href="https://fashion-genius.com/privacy/">Privacy</a><a href="https://fashion-genius.com/terms/">Terms</a></div></footer>
-</div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Fashion Genius Creator Studio — Private Beta</title>
+
+<style>
+:root{
+  --b:#0d0f10;
+  --p:#151718;
+  --l:#303334;
+  --w:#f3f2ee;
+  --m:#a6a7a7;
+  --g:#c9ff18;
+}
+
+*{
+  box-sizing:border-box
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+body{
+  margin:0;
+  background:var(--b);
+  color:var(--w);
+  font-family:Arial,sans-serif
+}
+
+.s{
+  width:min(1400px,calc(100% - 64px));
+  margin:auto
+}
+
+a{
+  color:inherit
+}
+
+/* HEADER */
+
+.nav{
+  height:82px;
+  border-bottom:1px solid var(--l);
+  display:flex;
+  align-items:center;
+  justify-content:space-between
+}
+
+.logo{
+  font-family:Georgia,'Times New Roman',serif;
+  font-weight:700;
+  letter-spacing:-.02em;
+  text-decoration:none;
+  font-size:22px;
+  white-space:nowrap
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:30px;
+  font-size:12px;
+  letter-spacing:.03em
+}
+
+.links a{
+  text-decoration:none;
+  color:#c6c6c3
+}
+
+.links>a:not(.btn){
+  padding-bottom:3px;
+  border-bottom:1px solid transparent
+}
+
+.links>a:not(.btn):hover{
+  border-bottom-color:#8d8f8e
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 18px;
+  border:1px solid #d7d7d2;
+  text-decoration:none;
+  font-weight:700
+}
+
+.btn.g{
+  background:var(--g);
+  border-color:var(--g);
+  color:#080909
+}
+
+/* HERO */
+
+.hero{
+  padding:96px 0 64px
+}
+
+.k{
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:#9fa1a0
+}
+
+h1,
+h2,
+h3,
+.price{
+  font-family:Georgia,serif
+}
+
+.hero h1{
+  font-size:clamp(54px,7vw,106px);
+  line-height:.92;
+  letter-spacing:-.05em;
+  max-width:1000px;
+  margin:20px 0 28px
+}
+
+.hero p{
+  max-width:720px;
+  color:#b3b5b4;
+  font-size:19px;
+  line-height:1.6
+}
+
+.actions{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-top:34px
+}
+
+.micro{
+  font-size:12px;
+  color:#8d8f8e
+}
+
+/* PRODUCT */
+
+.product{
+  border:1px solid var(--l);
+  padding:10px;
+  background:#141617;
+  margin-bottom:70px
+}
+
+.product img,
+.screen img{
+  width:100%;
+  display:block
+}
+
+/* BETA ACCESS */
+
+.bar{
+  border:1px solid var(--l);
+  padding:30px;
+  display:grid;
+  grid-template-columns:1fr 1.6fr .7fr;
+  gap:28px;
+  align-items:center;
+  margin-bottom:100px
+}
+
+.bar h2{
+  font-size:30px;
+  margin:8px 0
+}
+
+.bar p{
+  font-size:14px;
+  color:#aaa;
+  line-height:1.6;
+  margin:0
+}
+
+.right{
+  text-align:right
+}
+
+/* SECTIONS */
+
+section{
+  border-top:1px solid #252728;
+  padding:96px 0
+}
+
+.head{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:50px;
+  margin-bottom:62px
+}
+
+.head h2{
+  font-size:clamp(40px,5vw,68px);
+  line-height:1;
+  margin:0
+}
+
+.head p,
+.copy p,
+.intro p{
+  color:#aaa;
+  line-height:1.7
+}
+
+/* WALKTHROUGH */
+
+.walk{
+  display:grid;
+  gap:72px
+}
+
+.row{
+  display:grid;
+  grid-template-columns:.55fr 1.45fr;
+  gap:55px;
+  align-items:start
+}
+
+.n{
+  font-size:11px;
+  color:var(--g);
+  letter-spacing:.17em
+}
+
+.copy h3{
+  font-size:34px;
+  margin:12px 0
+}
+
+.screen{
+  border:1px solid var(--l);
+  padding:8px;
+  background:#151718
+}
+
+/* BETA MISSION */
+
+.mission{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:24px
+}
+
+.mission h2,
+.intro h2{
+  font-size:clamp(42px,5vw,68px);
+  line-height:1;
+  margin:14px 0 20px
+}
+
+.box{
+  border:1px solid var(--l);
+  padding:34px;
+  background:#111314
+}
+
+.lime{
+  background:var(--g);
+  color:#0b0c0c;
+  border-color:var(--g)
+}
+
+ul{
+  list-style:none;
+  padding:0;
+  margin:20px 0 0
+}
+
+li{
+  padding:9px 0;
+  border-bottom:1px solid rgba(120,120,120,.25);
+  font-size:14px
+}
+
+/* PRICING */
+
+.plans{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:42px
+}
+
+.plan{
+  border:1px solid var(--l);
+  padding:32px
+}
+
+.name{
+  font-size:11px;
+  letter-spacing:.2em
+}
+
+.price{
+  font-size:52px;
+  margin:20px 0 4px
+}
+
+.was{
+  color:#777;
+  text-decoration:line-through
+}
+
+.plan p{
+  font-size:13px;
+  color:#999
+}
+
+/* FEEDBACK */
+
+.feedback{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:24px
+}
+
+.feedback h2{
+  font-size:54px;
+  line-height:1;
+  margin:12px 0
+}
+
+.disabled{
+  opacity:.45;
+  pointer-events:none
+}
+
+/* FINAL CTA */
+
+.final{
+  text-align:center;
+  padding:120px 0
+}
+
+.final h2{
+  font-size:clamp(44px,6vw,78px);
+  margin:12px auto 34px;
+  max-width:850px
+}
+
+/* FOOTER */
+
+footer{
+  border-top:1px solid var(--l);
+  padding:32px 0 48px;
+  display:flex;
+  justify-content:space-between;
+  color:#808281;
+  font-size:12px
+}
+
+footer div{
+  display:flex;
+  gap:22px
+}
+
+footer a{
+  text-decoration:none
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+  .s{
+    width:calc(100% - 28px)
+  }
+
+  .nav{
+    height:70px
+  }
+
+  .links>a:not(.btn){
+    display:none
+  }
+
+  .hero{
+    padding:58px 0 44px
+  }
+
+  .bar,
+  .head,
+  .row,
+  .mission,
+  .plans,
+  .feedback{
+    grid-template-columns:1fr
+  }
+
+  .right{
+    text-align:left
+  }
+
+  .row{
+    gap:20px
+  }
+
+  section{
+    padding:70px 0
+  }
+
+  .walk{
+    gap:60px
+  }
+
+  footer{
+    flex-direction:column;
+    gap:18px
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="s">
+
+<nav class="nav">
+
+<a
+  class="logo"
+  href="https://fashion-genius.com/"
+  aria-label="Fashion Genius home"
+>
+FASHION GENIUS
+</a>
+
+<div class="links">
+
+<a href="https://fashion-genius.com/#platform">
+Plans
+</a>
+
+<a
+  class="btn"
+  href="https://creatorstudio.fashion-genius.com/"
+>
+Enter Creator Studio ↗
+</a>
+
+</div>
+</nav>
+
+
+<header class="hero">
+
+<div class="k">
+Creator Studio · Private Beta
+</div>
+
+<h1>
+Welcome to your Creator Studio.
+</h1>
+
+<p>
+Create and experiment with AI-powered virtual fashion looks using your own content.
+Experience the product first — and help us shape what comes next.
+</p>
+
+<div class="actions">
+
+<a
+  class="btn g"
+  href="https://creatorstudio.fashion-genius.com/"
+>
+Start your 21-day beta ↗
+</a>
+
+<span class="micro">
+Complimentary PRO access · No credit card · No posting requirement
+</span>
+
+</div>
+
+</header>
+
+
+<div class="product">
+
+<img
+  src="assets/dashboard.png"
+  alt="Creator Studio dashboard"
+>
+
+</div>
+
+
+<div class="bar">
+
+<div>
+
+<div class="k">
+Your beta access
+</div>
+
+<h2>
+21 days · PRO
+</h2>
+
+</div>
+
+<p>
+Register for Creator Studio, then we’ll upgrade your account to PRO for the private beta.
+Create a few looks and use the workflow as you naturally would.
+</p>
+
+<div class="right">
+
+<strong>
+3–5 looks
+</strong>
+
+<br>
+
+<span class="micro">
++ short feedback survey
+</span>
+
+</div>
+
+</div>
+
+
+<section>
+
+<div class="head">
+
+<h2>
+From upload to first look.
+</h2>
+
+<p>
+Start whenever it suits you.
+Four simple steps take you from your own content to a generated virtual try-on.
+</p>
+
+</div>
+
+
+<div class="walk">
+
+
+<div class="row">
+
+<div class="copy">
+
+<div class="n">
+01 / MODEL
+</div>
+
+<h3>
+Add your model.
+</h3>
+
+<p>
+Choose an existing model or upload a clear, well-lit image.
+</p>
+
+</div>
+
+<div class="screen">
+
+<img
+  src="assets/models.png"
+  alt="Fashion Genius Model Library"
+>
+
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="copy">
+
+<div class="n">
+02 / CLOTHING
+</div>
+
+<h3>
+Add a garment.
+</h3>
+
+<p>
+Select clothing from your library or upload the piece you want to try.
+</p>
+
+</div>
+
+<div class="screen">
+
+<img
+  src="assets/clothes.png"
+  alt="Fashion Genius Garment Library"
+>
+
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="copy">
+
+<div class="n">
+03 / CREATE
+</div>
+
+<h3>
+Generate your look.
+</h3>
+
+<p>
+Open Try-On Studio, pair model and garment,
+preview the pairing and generate your result.
+</p>
+
+</div>
+
+<div class="screen">
+
+<img
+  src="assets/tryon.png"
+  alt="Fashion Genius Try-On Studio"
+>
+
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="copy">
+
+<div class="n">
+04 / EXPLORE
+</div>
+
+<h3>
+Review. Repeat. Explore.
+</h3>
+
+<p>
+Review generated looks under Results and experiment
+with different garments and combinations.
+</p>
+
+</div>
+
+<div class="screen">
+
+<img
+  src="assets/results.png"
+  alt="Fashion Genius Try-On Results"
+>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="mission">
+
+<div>
+
+<div class="k">
+Your beta mission
+</div>
+
+<h2>
+Use it like a creator — not like a tester.
+</h2>
+
+<p style="color:#aaa;line-height:1.7">
+
+We want to understand whether Creator Studio can make fashion content creation
+faster, easier and more flexible.
+
+There is no requirement to post or promote Fashion Genius.
+
+Your product experience and feedback are what matter.
+
+</p>
+
+</div>
+
+
+<div class="box lime">
+
+<div
+  class="k"
+  style="color:#0b0c0c"
+>
+During your 21 days
+</div>
+
+<ul>
+
+<li>
+Create 3–5 different looks
+</li>
+
+<li>
+Try different garments or styles
+</li>
+
+<li>
+Explore Results & Collections
+</li>
+
+<li>
+Note what you love and what you miss
+</li>
+
+<li>
+Complete the short feedback survey
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="intro">
+
+<div class="k">
+A thank-you for shaping Fashion Genius with us
+</div>
+
+<h2>
+Preferred early-access pricing.
+</h2>
+
+<p>
+If Creator Studio works for you and you decide to continue after the beta,
+you’ll receive 50% off your first three paid months on either Creator or PRO.
+</p>
+
+</div>
+
+
+<div class="plans">
+
+
+<div class="plan">
+
+<div class="name">
+CREATOR
+</div>
+
+<div class="price">
+
+€9.50
+
+<span style="font:14px Arial">
+/ month
+</span>
+
+</div>
+
+<div class="was">
+€19 / month
+</div>
+
+<p>
+First 3 paid months.
+Standard pricing applies afterwards.
+</p>
+
+</div>
+
+
+<div class="plan">
+
+<div class="name">
+PRO
+</div>
+
+<div class="price">
+
+€24.50
+
+<span style="font:14px Arial">
+/ month
+</span>
+
+</div>
+
+<div class="was">
+€49 / month
+</div>
+
+<p>
+First 3 paid months.
+Standard pricing applies afterwards.
+</p>
+
+</div>
+
+</div>
+
+
+<p style="font-size:13px;margin-top:22px">
+
+Explore standard plans and features →
+
+<a
+  style="color:var(--g)"
+  href="https://fashion-genius.com/#platform"
+>
+View plans
+</a>
+
+</p>
+
+<p class="micro">
+No long-term commitment required.
+</p>
+
+</section>
+
+
+<section>
+
+<div class="feedback">
+
+<div>
+
+<div class="k">
+Feedback
+</div>
+
+<h2>
+Help shape what comes next.
+</h2>
+
+<p style="color:#aaa;line-height:1.7">
+
+After you’ve created a few looks,
+we’ll ask 10 short questions about your experience.
+
+It should take around four minutes.
+
+</p>
+
+</div>
+
+
+<div class="box">
+
+<div>
+
+<div class="k">
+Beta feedback survey
+</div>
+
+<h3 style="font-size:32px;margin:12px 0">
+Coming shortly.
+</h3>
+
+<p style="color:#aaa;line-height:1.6">
+The survey link will be shared directly with beta creators after testing.
+</p>
+
+</div>
+
+
+<span class="btn disabled">
+Share feedback →
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<div class="final">
+
+<div class="k">
+Private Creator Beta
+</div>
+
+<h2>
+Ready to create your first look?
+</h2>
+
+<a
+  class="btn g"
+  href="https://creatorstudio.fashion-genius.com/"
+>
+Enter Creator Studio ↗
+</a>
+
+<p
+  class="micro"
+  style="margin-top:20px"
+>
+Register first. Your account will then be manually upgraded to PRO for the beta.
+</p>
+
+</div>
+
+
+<footer>
+
+<span>
+© 2026 Fashion Genius · Creator Studio Private Beta
+</span>
+
+<div>
+
+<a href="https://fashion-genius.com/">
+Fashion Genius
+</a>
+
+<a href="https://fashion-genius.com/privacy/">
+Privacy
+</a>
+
+<a href="https://fashion-genius.com/terms/">
+Terms
+</a>
+
+</div>
+
+</footer>
+
+
+</div>
+
+</body>
+</html>
