@@ -8,454 +8,443 @@
 
 <style>
 :root{
-  --b:#0d0f10;
-  --p:#151718;
-  --l:#303334;
-  --w:#f3f2ee;
-  --m:#a6a7a7;
-  --g:#c9ff18;
+--bg:#0d0f10;
+--panel:#151718;
+--line:#303334;
+--white:#f3f2ee;
+--muted:#a6a7a7;
+--lime:#c9ff18
 }
 
-*{
-  box-sizing:border-box
-}
+*{box-sizing:border-box}
 
-html{
-  scroll-behavior:smooth
-}
+html{scroll-behavior:smooth}
 
 body{
-  margin:0;
-  background:var(--b);
-  color:var(--w);
-  font-family:Arial,sans-serif
+margin:0;
+background:var(--bg);
+color:var(--white);
+font-family:Arial,sans-serif
 }
 
-.s{
-  width:min(1400px,calc(100% - 64px));
-  margin:auto
+.container{
+width:min(1400px,calc(100% - 64px));
+margin:auto
 }
 
-a{
-  color:inherit
-}
+a{color:inherit}
 
 /* HEADER */
 
 .nav{
-  height:82px;
-  border-bottom:1px solid var(--l);
-  display:flex;
-  align-items:center;
-  justify-content:space-between
+height:82px;
+border-bottom:1px solid var(--line);
+display:flex;
+align-items:center;
+justify-content:space-between
 }
 
-.logo{
-  font-family:Georgia,'Times New Roman',serif;
-  font-weight:700;
-  letter-spacing:-.02em;
-  text-decoration:none;
-  font-size:22px;
-  white-space:nowrap
+.wordmark{
+font-family:Georgia,"Times New Roman",serif;
+font-size:22px;
+font-weight:700;
+letter-spacing:-0.02em;
+color:#f3f2ee;
+text-decoration:none;
+white-space:nowrap
 }
 
-.links{
-  display:flex;
-  align-items:center;
-  gap:30px;
-  font-size:12px;
-  letter-spacing:.03em
+.nav-right{
+display:flex;
+align-items:center;
+gap:30px;
+font-size:12px
 }
 
-.links a{
-  text-decoration:none;
-  color:#c6c6c3
+.nav-right a{
+text-decoration:none
 }
 
-.links>a:not(.btn){
-  padding-bottom:3px;
-  border-bottom:1px solid transparent
+.nav-link{
+color:#c6c6c3
 }
 
-.links>a:not(.btn):hover{
-  border-bottom-color:#8d8f8e
+.button{
+display:inline-block;
+padding:12px 18px;
+border:1px solid #d7d7d2;
+text-decoration:none;
+font-weight:700
 }
 
-.btn{
-  display:inline-block;
-  padding:12px 18px;
-  border:1px solid #d7d7d2;
-  text-decoration:none;
-  font-weight:700
-}
-
-.btn.g{
-  background:var(--g);
-  border-color:var(--g);
-  color:#080909
+.button-primary{
+background:var(--lime);
+border-color:var(--lime);
+color:#080909
 }
 
 /* HERO */
 
 .hero{
-  padding:96px 0 64px
+padding:96px 0 64px
 }
 
-.k{
-  font-size:11px;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-  color:#9fa1a0
+.eyebrow{
+font-size:11px;
+letter-spacing:.18em;
+text-transform:uppercase;
+color:#9fa1a0
 }
 
-h1,
-h2,
-h3,
-.price{
-  font-family:Georgia,serif
+h1,h2,h3,.price{
+font-family:Georgia,"Times New Roman",serif
 }
 
 .hero h1{
-  font-size:clamp(54px,7vw,106px);
-  line-height:.92;
-  letter-spacing:-.05em;
-  max-width:1000px;
-  margin:20px 0 28px
+font-size:clamp(54px,7vw,106px);
+line-height:.92;
+letter-spacing:-.05em;
+max-width:1000px;
+margin:20px 0 28px
 }
 
 .hero p{
-  max-width:720px;
-  color:#b3b5b4;
-  font-size:19px;
-  line-height:1.6
+max-width:720px;
+color:#b3b5b4;
+font-size:19px;
+line-height:1.6
 }
 
-.actions{
-  display:flex;
-  gap:18px;
-  align-items:center;
-  flex-wrap:wrap;
-  margin-top:34px
+.hero-actions{
+display:flex;
+gap:18px;
+align-items:center;
+flex-wrap:wrap;
+margin-top:34px
 }
 
 .micro{
-  font-size:12px;
-  color:#8d8f8e
+font-size:12px;
+color:#8d8f8e
 }
 
 /* PRODUCT */
 
 .product{
-  border:1px solid var(--l);
-  padding:10px;
-  background:#141617;
-  margin-bottom:70px
+border:1px solid var(--line);
+padding:10px;
+background:#141617;
+margin-bottom:70px
 }
 
 .product img,
 .screen img{
-  width:100%;
-  display:block
+width:100%;
+display:block
 }
 
-/* BETA ACCESS */
+/* BETA BAR */
 
-.bar{
-  border:1px solid var(--l);
-  padding:30px;
-  display:grid;
-  grid-template-columns:1fr 1.6fr .7fr;
-  gap:28px;
-  align-items:center;
-  margin-bottom:100px
+.beta-bar{
+border:1px solid var(--line);
+padding:30px;
+display:grid;
+grid-template-columns:1fr 1.6fr .7fr;
+gap:28px;
+align-items:center;
+margin-bottom:100px
 }
 
-.bar h2{
-  font-size:30px;
-  margin:8px 0
+.beta-bar h2{
+font-size:30px;
+margin:8px 0
 }
 
-.bar p{
-  font-size:14px;
-  color:#aaa;
-  line-height:1.6;
-  margin:0
+.beta-bar p{
+font-size:14px;
+color:#aaa;
+line-height:1.6;
+margin:0
 }
 
-.right{
-  text-align:right
+.beta-right{
+text-align:right
 }
 
 /* SECTIONS */
 
 section{
-  border-top:1px solid #252728;
-  padding:96px 0
+border-top:1px solid #252728;
+padding:96px 0
 }
 
-.head{
-  display:grid;
-  grid-template-columns:.85fr 1.15fr;
-  gap:50px;
-  margin-bottom:62px
+.section-head{
+display:grid;
+grid-template-columns:.85fr 1.15fr;
+gap:50px;
+margin-bottom:62px
 }
 
-.head h2{
-  font-size:clamp(40px,5vw,68px);
-  line-height:1;
-  margin:0
+.section-head h2{
+font-size:clamp(40px,5vw,68px);
+line-height:1;
+margin:0
 }
 
-.head p,
+.section-head p,
 .copy p,
 .intro p{
-  color:#aaa;
-  line-height:1.7
+color:#aaa;
+line-height:1.7
 }
 
 /* WALKTHROUGH */
 
-.walk{
-  display:grid;
-  gap:72px
+.walkthrough{
+display:grid;
+gap:72px
 }
 
-.row{
-  display:grid;
-  grid-template-columns:.55fr 1.45fr;
-  gap:55px;
-  align-items:start
+.step{
+display:grid;
+grid-template-columns:.55fr 1.45fr;
+gap:55px;
+align-items:start
 }
 
-.n{
-  font-size:11px;
-  color:var(--g);
-  letter-spacing:.17em
+.step-number{
+font-size:11px;
+color:var(--lime);
+letter-spacing:.17em
 }
 
 .copy h3{
-  font-size:34px;
-  margin:12px 0
+font-size:34px;
+margin:12px 0
 }
 
 .screen{
-  border:1px solid var(--l);
-  padding:8px;
-  background:#151718
+border:1px solid var(--line);
+padding:8px;
+background:#151718
 }
 
-/* BETA MISSION */
+/* MISSION */
 
 .mission{
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:24px
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:24px
 }
 
 .mission h2,
 .intro h2{
-  font-size:clamp(42px,5vw,68px);
-  line-height:1;
-  margin:14px 0 20px
+font-size:clamp(42px,5vw,68px);
+line-height:1;
+margin:14px 0 20px
 }
 
 .box{
-  border:1px solid var(--l);
-  padding:34px;
-  background:#111314
+border:1px solid var(--line);
+padding:34px;
+background:#111314
 }
 
-.lime{
-  background:var(--g);
-  color:#0b0c0c;
-  border-color:var(--g)
+.lime-box{
+background:var(--lime);
+color:#0b0c0c;
+border-color:var(--lime)
 }
 
 ul{
-  list-style:none;
-  padding:0;
-  margin:20px 0 0
+list-style:none;
+padding:0;
+margin:20px 0 0
 }
 
 li{
-  padding:9px 0;
-  border-bottom:1px solid rgba(120,120,120,.25);
-  font-size:14px
+padding:9px 0;
+border-bottom:1px solid rgba(120,120,120,.25);
+font-size:14px
 }
 
-/* PRICING */
+/* PLANS */
 
 .plans{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:16px;
-  margin-top:42px
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:16px;
+margin-top:42px
 }
 
 .plan{
-  border:1px solid var(--l);
-  padding:32px
+border:1px solid var(--line);
+padding:32px
 }
 
-.name{
-  font-size:11px;
-  letter-spacing:.2em
+.plan-name{
+font-size:11px;
+letter-spacing:.2em
 }
 
 .price{
-  font-size:52px;
-  margin:20px 0 4px
+font-size:52px;
+margin:20px 0 4px
 }
 
-.was{
-  color:#777;
-  text-decoration:line-through
+.old-price{
+color:#777;
+text-decoration:line-through
 }
 
 .plan p{
-  font-size:13px;
-  color:#999
+font-size:13px;
+color:#999
 }
 
 /* FEEDBACK */
 
 .feedback{
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:24px
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:24px
 }
 
 .feedback h2{
-  font-size:54px;
-  line-height:1;
-  margin:12px 0
+font-size:54px;
+line-height:1;
+margin:12px 0
 }
 
 .disabled{
-  opacity:.45;
-  pointer-events:none
+opacity:.45;
+pointer-events:none
 }
 
-/* FINAL CTA */
+/* FINAL */
 
 .final{
-  text-align:center;
-  padding:120px 0
+text-align:center;
+padding:120px 0
 }
 
 .final h2{
-  font-size:clamp(44px,6vw,78px);
-  margin:12px auto 34px;
-  max-width:850px
+font-size:clamp(44px,6vw,78px);
+margin:12px auto 34px;
+max-width:850px
 }
 
 /* FOOTER */
 
 footer{
-  border-top:1px solid var(--l);
-  padding:32px 0 48px;
-  display:flex;
-  justify-content:space-between;
-  color:#808281;
-  font-size:12px
+border-top:1px solid var(--line);
+padding:32px 0 48px;
+display:flex;
+justify-content:space-between;
+color:#808281;
+font-size:12px
 }
 
-footer div{
-  display:flex;
-  gap:22px
+.footer-links{
+display:flex;
+gap:22px
 }
 
 footer a{
-  text-decoration:none
+text-decoration:none
 }
 
 /* MOBILE */
 
 @media(max-width:800px){
 
-  .s{
-    width:calc(100% - 28px)
-  }
+.container{
+width:calc(100% - 28px)
+}
 
-  .nav{
-    height:70px
-  }
+.nav{
+height:70px
+}
 
-  .links>a:not(.btn){
-    display:none
-  }
+.nav-link{
+display:none
+}
 
-  .hero{
-    padding:58px 0 44px
-  }
+.hero{
+padding:58px 0 44px
+}
 
-  .bar,
-  .head,
-  .row,
-  .mission,
-  .plans,
-  .feedback{
-    grid-template-columns:1fr
-  }
+.beta-bar,
+.section-head,
+.step,
+.mission,
+.plans,
+.feedback{
+grid-template-columns:1fr
+}
 
-  .right{
-    text-align:left
-  }
+.beta-right{
+text-align:left
+}
 
-  .row{
-    gap:20px
-  }
+.step{
+gap:20px
+}
 
-  section{
-    padding:70px 0
-  }
+section{
+padding:70px 0
+}
 
-  .walk{
-    gap:60px
-  }
+.walkthrough{
+gap:60px
+}
 
-  footer{
-    flex-direction:column;
-    gap:18px
-  }
+footer{
+flex-direction:column;
+gap:18px
+}
+
 }
 </style>
 </head>
 
 <body>
 
-<div class="s">
+<div class="container">
 
 <nav class="nav">
 
 <a
-  class="logo"
-  href="https://fashion-genius.com/"
-  aria-label="Fashion Genius home"
+class="wordmark"
+href="https://fashion-genius.com/"
 >
 FASHION GENIUS
 </a>
 
-<div class="links">
+<div class="nav-right">
 
-<a href="https://fashion-genius.com/#platform">
+<a
+class="nav-link"
+href="https://fashion-genius.com/#platform"
+>
 Plans
 </a>
 
 <a
-  class="btn"
-  href="https://creatorstudio.fashion-genius.com/"
+class="button"
+href="https://creatorstudio.fashion-genius.com/"
 >
 Enter Creator Studio ↗
 </a>
 
 </div>
+
 </nav>
 
 
 <header class="hero">
 
-<div class="k">
+<div class="eyebrow">
 Creator Studio · Private Beta
 </div>
 
@@ -468,11 +457,11 @@ Create and experiment with AI-powered virtual fashion looks using your own conte
 Experience the product first — and help us shape what comes next.
 </p>
 
-<div class="actions">
+<div class="hero-actions">
 
 <a
-  class="btn g"
-  href="https://creatorstudio.fashion-genius.com/"
+class="button button-primary"
+href="https://creatorstudio.fashion-genius.com/"
 >
 Start your 21-day beta ↗
 </a>
@@ -489,18 +478,18 @@ Complimentary PRO access · No credit card · No posting requirement
 <div class="product">
 
 <img
-  src="assets/dashboard.png"
-  alt="Creator Studio dashboard"
+src="assets/dashboard.png"
+alt="Fashion Genius Creator Studio dashboard"
 >
 
 </div>
 
 
-<div class="bar">
+<div class="beta-bar">
 
 <div>
 
-<div class="k">
+<div class="eyebrow">
 Your beta access
 </div>
 
@@ -515,11 +504,9 @@ Register for Creator Studio, then we’ll upgrade your account to PRO for the pr
 Create a few looks and use the workflow as you naturally would.
 </p>
 
-<div class="right">
+<div class="beta-right">
 
-<strong>
-3–5 looks
-</strong>
+<strong>3–5 looks</strong>
 
 <br>
 
@@ -534,7 +521,7 @@ Create a few looks and use the workflow as you naturally would.
 
 <section>
 
-<div class="head">
+<div class="section-head">
 
 <h2>
 From upload to first look.
@@ -548,14 +535,14 @@ Four simple steps take you from your own content to a generated virtual try-on.
 </div>
 
 
-<div class="walk">
+<div class="walkthrough">
 
 
-<div class="row">
+<div class="step">
 
 <div class="copy">
 
-<div class="n">
+<div class="step-number">
 01 / MODEL
 </div>
 
@@ -572,8 +559,8 @@ Choose an existing model or upload a clear, well-lit image.
 <div class="screen">
 
 <img
-  src="assets/models.png"
-  alt="Fashion Genius Model Library"
+src="assets/models.png"
+alt="Fashion Genius Model Library"
 >
 
 </div>
@@ -581,11 +568,11 @@ Choose an existing model or upload a clear, well-lit image.
 </div>
 
 
-<div class="row">
+<div class="step">
 
 <div class="copy">
 
-<div class="n">
+<div class="step-number">
 02 / CLOTHING
 </div>
 
@@ -602,8 +589,8 @@ Select clothing from your library or upload the piece you want to try.
 <div class="screen">
 
 <img
-  src="assets/clothes.png"
-  alt="Fashion Genius Garment Library"
+src="assets/clothes.png"
+alt="Fashion Genius Garment Library"
 >
 
 </div>
@@ -611,11 +598,11 @@ Select clothing from your library or upload the piece you want to try.
 </div>
 
 
-<div class="row">
+<div class="step">
 
 <div class="copy">
 
-<div class="n">
+<div class="step-number">
 03 / CREATE
 </div>
 
@@ -633,8 +620,8 @@ preview the pairing and generate your result.
 <div class="screen">
 
 <img
-  src="assets/tryon.png"
-  alt="Fashion Genius Try-On Studio"
+src="assets/tryon.png"
+alt="Fashion Genius Try-On Studio"
 >
 
 </div>
@@ -642,11 +629,11 @@ preview the pairing and generate your result.
 </div>
 
 
-<div class="row">
+<div class="step">
 
 <div class="copy">
 
-<div class="n">
+<div class="step-number">
 04 / EXPLORE
 </div>
 
@@ -655,8 +642,8 @@ Review. Repeat. Explore.
 </h3>
 
 <p>
-Review generated looks under Results and experiment
-with different garments and combinations.
+Review generated looks under Results
+and experiment with different garments and combinations.
 </p>
 
 </div>
@@ -664,14 +651,13 @@ with different garments and combinations.
 <div class="screen">
 
 <img
-  src="assets/results.png"
-  alt="Fashion Genius Try-On Results"
+src="assets/results.png"
+alt="Fashion Genius Try-On Results"
 >
 
 </div>
 
 </div>
-
 
 </div>
 
@@ -684,7 +670,7 @@ with different garments and combinations.
 
 <div>
 
-<div class="k">
+<div class="eyebrow">
 Your beta mission
 </div>
 
@@ -706,36 +692,22 @@ Your product experience and feedback are what matter.
 </div>
 
 
-<div class="box lime">
+<div class="box lime-box">
 
 <div
-  class="k"
-  style="color:#0b0c0c"
+class="eyebrow"
+style="color:#0b0c0c"
 >
 During your 21 days
 </div>
 
 <ul>
 
-<li>
-Create 3–5 different looks
-</li>
-
-<li>
-Try different garments or styles
-</li>
-
-<li>
-Explore Results & Collections
-</li>
-
-<li>
-Note what you love and what you miss
-</li>
-
-<li>
-Complete the short feedback survey
-</li>
+<li>Create 3–5 different looks</li>
+<li>Try different garments or styles</li>
+<li>Explore Results & Collections</li>
+<li>Note what you love and what you miss</li>
+<li>Complete the short feedback survey</li>
 
 </ul>
 
@@ -750,7 +722,7 @@ Complete the short feedback survey
 
 <div class="intro">
 
-<div class="k">
+<div class="eyebrow">
 A thank-you for shaping Fashion Genius with us
 </div>
 
@@ -768,24 +740,20 @@ you’ll receive 50% off your first three paid months on either Creator or PRO.
 
 <div class="plans">
 
-
 <div class="plan">
 
-<div class="name">
+<div class="plan-name">
 CREATOR
 </div>
 
 <div class="price">
-
 €9.50
-
 <span style="font:14px Arial">
 / month
 </span>
-
 </div>
 
-<div class="was">
+<div class="old-price">
 €19 / month
 </div>
 
@@ -799,21 +767,18 @@ Standard pricing applies afterwards.
 
 <div class="plan">
 
-<div class="name">
+<div class="plan-name">
 PRO
 </div>
 
 <div class="price">
-
 €24.50
-
 <span style="font:14px Arial">
 / month
 </span>
-
 </div>
 
-<div class="was">
+<div class="old-price">
 €49 / month
 </div>
 
@@ -832,8 +797,8 @@ Standard pricing applies afterwards.
 Explore standard plans and features →
 
 <a
-  style="color:var(--g)"
-  href="https://fashion-genius.com/#platform"
+style="color:var(--lime)"
+href="https://fashion-genius.com/#platform"
 >
 View plans
 </a>
@@ -853,7 +818,7 @@ No long-term commitment required.
 
 <div>
 
-<div class="k">
+<div class="eyebrow">
 Feedback
 </div>
 
@@ -877,7 +842,7 @@ It should take around four minutes.
 
 <div>
 
-<div class="k">
+<div class="eyebrow">
 Beta feedback survey
 </div>
 
@@ -891,8 +856,7 @@ The survey link will be shared directly with beta creators after testing.
 
 </div>
 
-
-<span class="btn disabled">
+<span class="button disabled">
 Share feedback →
 </span>
 
@@ -905,7 +869,7 @@ Share feedback →
 
 <div class="final">
 
-<div class="k">
+<div class="eyebrow">
 Private Creator Beta
 </div>
 
@@ -914,15 +878,15 @@ Ready to create your first look?
 </h2>
 
 <a
-  class="btn g"
-  href="https://creatorstudio.fashion-genius.com/"
+class="button button-primary"
+href="https://creatorstudio.fashion-genius.com/"
 >
 Enter Creator Studio ↗
 </a>
 
 <p
-  class="micro"
-  style="margin-top:20px"
+class="micro"
+style="margin-top:20px"
 >
 Register first. Your account will then be manually upgraded to PRO for the beta.
 </p>
@@ -936,7 +900,7 @@ Register first. Your account will then be manually upgraded to PRO for the beta.
 © 2026 Fashion Genius · Creator Studio Private Beta
 </span>
 
-<div>
+<div class="footer-links">
 
 <a href="https://fashion-genius.com/">
 Fashion Genius
@@ -953,7 +917,6 @@ Terms
 </div>
 
 </footer>
-
 
 </div>
 
